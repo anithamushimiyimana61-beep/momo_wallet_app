@@ -87,14 +87,4 @@ Because a wallet action is all or nothing. If the balance changed before a later
 
 I start the running balance at 0 but the lowest recorded value at the first balance after the first chronological transaction — not 0 itself. If 0 were always included, every wallet that never went negative would report 0 as its lowest balance, hiding the real low of 7,000 RWF in the sample history. The sample goes: opening 10,000 → cash out 3,000 leaves 7,000 (the low) → received 5,000 leaves 12,000 → sent 2,000 leaves 10,000. With no transactions at all, the card shows 0.
 
-## Requirement checklist
 
-- [x] At least two screens with data passed between them.
-- [x] Model class and sample data on first launch.
-- [x] Rules in functions outside `build`.
-- [x] Every input checked, with a clear refusal and no change.
-- [x] Current data shown everywhere, updated immediately.
-- [x] Delete with Undo, plus history-safe deletion.
-- [x] Empty states instead of blank screens.
-- [x] Own app name, theme colour and icons.
-- [x] README with features, five screenshots and both Think answers.
